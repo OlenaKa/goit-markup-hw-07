@@ -81,10 +81,10 @@ footer {
   text-decoration: none;
   background-color: map-get($colors, "accent");
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: map-get($transitions, "transition-border"),
+    map-get($transitions, "transition-bgc"),
+    map-get($transitions, "transition-fill"),
+    map-get($transitions, "transition-color");
 
   &:hover,
   &:focus {
